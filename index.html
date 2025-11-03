@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Master HTML & CSS Tags</title>
+    <meta
+      name="description"
+      content="Interactive learning site for HTML & CSS tags with playgrounds, quizzes and cheat sheets"
+    />
+    <link
+      rel="icon"
+      href="https://icongr.am/octicons/gear.svg?size=32&color=ffffff"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Prism syntax highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      integrity="sha512-U384iOFpB2D1TjpE192GTDryi5U1daAzxR1P1sFf323eO1N/V/hE/tuw6TzPj4/fQd/M/j2G2CgZiElVb3/gQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-wrap">
+          <a class="brand" href="#">Tag Master</a>
+          <span>Learn Web Development — Fast</span>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tags">HTML Tags</a></li>
+            <li><a href="#cssprops">CSS Properties</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#uiux">UI / UX</a></li>
+            <li><a href="#playground">Examples</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+        </nav>
+        <div class="header-controls">
+          <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+            🌙
+          </button>
+          <button id="menuToggle" class="icon-btn hamburger" aria-label="Menu">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <a class="brand" href="#">Tag Master</a>
+        <button id="closeMenu" class="icon-btn">✕</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tags">HTML Tags</a></li>
+          <li><a href="#cssprops">CSS Properties</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+          <li><a href="#uiux">UI / UX</a></li>
+          <li><a href="#playground">Examples</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main id="main-content">
+      <div class="container">
+        <section id="home" class="hero">
+          <div class="container hero-inner">
+            <div class="hero-card glass">
+              <div class="hero-left">
+                <h1>Master HTML & CSS Tags</h1>
+                <p class="lead">
+                  Interactive lessons, a powerful playground, and bite-sized
+                  projects that help you build portfolio-ready skills in HTML
+                  and CSS.
+                </p>
+                <div class="hero-actions">
+                  <a class="btn primary" href="#tags">Start Learning</a>
+                  <a class="btn ghost" href="#playground">Open Playground</a>
+                </div>
+                <ul class="hero-features">
+                  <li>Live code preview & editor</li>
+                  <li>Interactive quizzes & challenges</li>
+                  <li>Progress tracking & badges</li>
+                </ul>
+              </div>
+              <div class="hero-right">
+                <div class="visual-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+                    alt="A laptop on a desk with code on the screen"
+                  />
+                  <div class="visual-overlay">
+                    <pre><code class="language-html">&lt;h1&gt;Hello, world!&lt;/h1&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tags" class="section">
+          <div class="container">
+            <div class="section-header">
+              <h2>HTML Tags</h2>
+              <div class="controls">
+                <input
+                  id="searchInput"
+                  type="search"
+                  placeholder="Search tags or descriptions..."
+                />
+                <select id="filterCategory">
+                  <option value="all">All Categories</option>
+                </select>
+                <button id="downloadCheat" class="btn small">
+                  Download Cheat Sheet
+                </button>
+              </div>
+            </div>
+
+            <div id="tagsLoading" class="spinner" style="display: none"></div>
+            <div id="tagsGrid" class="cards-grid-container" aria-live="polite">
+              <!-- Cards inserted by JS -->
+            </div>
+          </div>
+        </section>
+
+        <section id="cssprops" class="section alt">
+          <div class="container">
+            <h2>CSS Properties</h2>
+            <p class="muted">
+              Interactive property demos showing before / after effects.
+            </p>
+            <div id="cssPropsGrid" class="cards-grid-container">
+              <!-- Sample property cards rendered by JS -->
+            </div>
+          </div>
+        </section>
+
+        <section id="css-topics" class="section">
+          <div class="container">
+            <h2>CSS Topics</h2>
+            <p class="muted">
+              Learn core CSS concepts with interactive examples.
+            </p>
+            <div id="cssTopicsGrid" class="cards-grid-container">
+              <!-- CSS topics rendered by JS -->
+            </div>
+          </div>
+        </section>
+
+        <section id="javascript" class="section">
+          <div class="container">
+            <h2>JavaScript Lessons</h2>
+            <p class="muted">
+              Interactive JavaScript lessons — run code and complete exercises.
+            </p>
+            <div id="jsLessons" class="cards-grid-container"></div>
+          </div>
+        </section>
+
+        <section id="uiux" class="section alt">
+          <div class="container">
+            <h2>UI / UX Guides</h2>
+            <p class="muted">
+              Design tips, accessibility advice and practical heuristics.
+            </p>
+            <div id="uxGrid" class="cards-grid-container"></div>
+          </div>
+        </section>
+
+        <section id="playground" class="section">
+          <div class="container">
+            <h2>Playground</h2>
+            <div class="playground glass">
+              <div class="playground-grid">
+                <div class="editor">
+                  <label for="editorHtml">HTML</label>
+                  <textarea id="editorHtml" spellcheck="false">
+&lt;h2&gt;Hello from Playground&lt;/h2&gt;&lt;p&gt;Edit this and see live preview.&lt;/p&gt;</textarea
+                  >
+                  <label for="editorCss">CSS</label>
+                  <textarea id="editorCss" spellcheck="false">
+body{font-family:inherit;padding:1rem}h2{color:#6a5cff}</textarea
+                  >
+                  <label for="editorJs">JavaScript</label>
+                  <textarea id="editorJs" spellcheck="false">
+// Try logging
+  console.log('Playground JS running');</textarea
+                  >
+                  <div class="editor-actions">
+                    <button id="runBtn" class="btn small primary">Run</button>
+                    <button id="copyAll" class="btn small">Copy</button>
+                  </div>
+                </div>
+                <div class="preview-container">
+                  <div class="preview">
+                    <label>Live Preview</label>
+                    <iframe
+                      id="playframe"
+                      sandbox="allow-scripts allow-same-origin"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modal for tag detail editing (mobile-friendly) -->
+        <div
+          id="tagModal"
+          class="modal"
+          aria-hidden="true"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modalTitle"
+        >
+          <div class="modal-backdrop" data-action="close"></div>
+          <div class="modal-card glass">
+            <header class="modal-header">
+              <h3 id="modalTitle">Tag</h3>
+              <button class="icon-btn" data-action="close">✕</button>
+            </header>
+            <main class="modal-body">
+              <div class="modal-columns">
+                <div>
+                  <label for="modalHtml">Live HTML</label>
+                  <textarea id="modalHtml" spellcheck="false"></textarea>
+                </div>
+                <div>
+                  <label for="modalPreview">Preview</label>
+                  <iframe
+                    id="modalPreview"
+                    sandbox="allow-same-origin"
+                  ></iframe>
+                </div>
+              </div>
+            </main>
+            <footer class="modal-footer">
+              <div class="action-group">
+                <button id="modalRun" class="btn primary">Run</button>
+                <button id="modalCopy" class="btn">Copy</button>
+              </div>
+              <button id="modalFav" class="btn icon-btn">☆</button>
+            </footer>
+          </div>
+        </div>
+
+        <section id="quiz" class="section alt">
+          <div class="container">
+            <h2>Quiz</h2>
+            <div class="quiz-progress">
+              <div class="progress-bar-container">
+                <div id="quizProgressBar" class="progress-bar"></div>
+              </div>
+            </div>
+            <div id="quizArea" class="glass quiz-card">
+              <!-- Quiz generated by JS -->
+            </div>
+          </div>
+        </section>
+
+        <section id="resources" class="section">
+          <div class="container">
+            <h2>Resources</h2>
+            <div class="resources-grid">
+              <a class="resource card glass" id="cheatDownload"
+                >Download Cheat Sheet</a
+              >
+              <a class="resource card glass" href="#tags"
+                >Bookmarks & Progress</a
+              >
+              <a class="resource card glass" href="#playground"
+                >Interactive Playground</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Tag Master — Learn HTML & CSS</p>
+        <p class="muted">
+          Built with pure HTML, CSS and vanilla JS • Glassmorphism UI
+        </p>
+        <p class="muted">Created by Ashraf Morningstar</p>
+      </div>
+    </footer>
+
+    <!-- Prism.js for syntax highlighting (load before app to ensure highlight available) -->
+    <a href="#" class="back-to-top" title="Back to top">↑</a>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+      integrity="sha512-9+4mSOPi352q9sTfG/iTgH8276a3u3X3jSWiT5Wxo3b/h/wFf1bKOe3ADd/30Gk6cT3h3/i/c38k/sQSA6fQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

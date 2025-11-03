@@ -1,0 +1,9 @@
+[
+  {"id":"css-1","title":"Selectors & Specificity","category":"Basics","desc":"How to select elements and how specificity works.","example":".card > p { color: #333 }","exercise":"Style only the first paragraph inside a card."},
+  {"id":"css-2","title":"Box Model & Spacing","category":"Basics","desc":"margin, border, padding and content box sizing.","example":"box-sizing: border-box; padding: 12px;","exercise":"Create a card with 16px padding and a subtle border."},
+  {"id":"css-3","title":"Flexbox","category":"Layout","desc":"One-dimensional layout system for rows/columns.","example":"display:flex; gap:12px; align-items:center;","exercise":"Create a nav bar with items spaced evenly."},
+  {"id":"css-4","title":"Grid","category":"Layout","desc":"Two-dimensional layout system for complex layouts.","example":"display:grid; grid-template-columns: 1fr 2fr;","exercise":"Create a two-column layout with a sidebar."},
+  {"id":"css-5","title":"Responsive Design","category":"Responsive","desc":"Media queries, fluid sizing and mobile-first strategies.","example":"@media (max-width:600px){ .grid{grid-template-columns:1fr} }","exercise":"Make a 3-column grid collapse to 1 column on small screens."},
+  {"id":"css-6","title":"Animations & Transitions","category":"Visual","desc":"Smooth transitions and keyframe animations.","example":"transition:transform .3s ease; @keyframes wiggle {0%{transform:rotate(-2deg)}100%{transform:rotate(2deg)}}","exercise":"Animate a button hover with a small lift effect."},
+  {"id":"css-7","title":"CSS Variables & Theming","category":"Advanced","desc":"Custom properties for design tokens and theming.","example":":root{--accent:#6a5cff} .btn{background:var(--accent)}","exercise":"Add a toggle that swaps a dark/light theme variable."}
+]
