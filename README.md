@@ -36,3 +36,14 @@ Files
 - `data/quiz.json` — quiz data (sample)
 
 This scaffold is intended as a starting point. It's designed to be expanded with more examples, animations, and learning material.
+
+---
+
+## 🔗 Live Demo
+
+Experience Tag Master for yourself:
+
+👉 **Live Project: [https://taxonomy-pro.netlify.app/](https://taxonomy-pro.netlify.app/)**
+
+---
+
