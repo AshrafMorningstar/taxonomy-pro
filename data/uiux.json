@@ -1,7 +1,0 @@
-[
-  {"id":"ux-1","title":"Fundamentals of UI/UX","category":"Principles","desc":"Understand users, clarity, and hierarchy.","tips":["Prioritize tasks","Keep UI consistent","Use clear affordances"]},
-  {"id":"ux-2","title":"Typography","category":"Visual","desc":"Choosing type scales, line-height and readable fonts.","tips":["Use 4–6 type scales","Prefer system fonts for performance","Use adequate line-height (1.4–1.6)"]},
-  {"id":"ux-3","title":"Color & Contrast","category":"Visual","desc":"Color theory, accessibility and contrast ratios.","tips":["Use accessible contrast (4.5:1 for text)","Use color to indicate state, not only meaning","Limit palette to 3–4 core colors"]},
-  {"id":"ux-4","title":"Layout & Spacing","category":"Principles","desc":"Use consistent spacing, grids and responsive rules.","tips":["Use a 4–8px spacing scale","Align to a baseline grid","Use whitespace to group content"]},
-  {"id":"ux-5","title":"Micro-interactions","category":"Interaction","desc":"Small animations that provide feedback.","tips":["Animate affordances","Keep animations short (<200ms)","Prefer subtlety over distraction"]}
-]

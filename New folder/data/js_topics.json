@@ -1,0 +1,9 @@
+[
+  {"id":"js-1","title":"Introduction to JavaScript","category":"Basics","desc":"What JavaScript is and how it fits with HTML & CSS.","example":"console.log('Hello from JavaScript');","exercise":"Use console.log to print your name."},
+  {"id":"js-2","title":"Variables & Data Types","category":"Basics","desc":"let/const, primitives, objects and arrays.","example":"const name = 'Alice'; let age = 30;","exercise":"Create an array of 3 favorite foods and log the second item."},
+  {"id":"js-3","title":"Functions & Scope","category":"Core","desc":"Function declarations, arrow functions and lexical scope.","example":"function greet(n){ return `Hello ${n}` }","exercise":"Write an arrow function that doubles a number."},
+  {"id":"js-4","title":"DOM Manipulation","category":"Browser APIs","desc":"Selecting elements, modifying DOM, classes and attributes.","example":"document.querySelector('h1').textContent = 'Changed'","exercise":"Create a button that toggles a class on a box."},
+  {"id":"js-5","title":"Events & Listeners","category":"Browser APIs","desc":"addEventListener, event objects, delegation.","example":"btn.addEventListener('click', ()=>alert('Clicked'))","exercise":"Make a list where clicking an item marks it as done."},
+  {"id":"js-6","title":"Async JavaScript","category":"Advanced","desc":"Promises, async/await, fetch API.","example":"const resp = await fetch('/data.json'); const j = await resp.json();","exercise":"Fetch sample JSON and render it to the page."},
+  {"id":"js-7","title":"ES6+ Features","category":"Advanced","desc":"Destructuring, spread, rest, modules.","example":"const {a,b} = obj; const arr2 = [...arr,4];","exercise":"Use destructuring to swap two variables."}
+]

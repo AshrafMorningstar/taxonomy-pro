@@ -1,5 +1,0 @@
-[
-  {"name":"Display (layout)","prop":"display","desc":"Change how elements flow (block, inline, flex, grid).","sample":"<div class=\"demo-box-inner\">Box</div>","value":"flex"},
-  {"name":"Gap (flex/grid)","prop":"gap","desc":"Space between items in flex/grid containers.","sample":"<div style=\"display:flex;\"><div class=\"demo-box-inner\">1</div><div class=\"demo-box-inner\">2</div></div>","value":"12px"},
-  {"name":"Border radius","prop":"borderRadius","desc":"Round corners of elements.","sample":"<div class=\"demo-box-inner\">Rounded</div>","value":"12px"}
-]

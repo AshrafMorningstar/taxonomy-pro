@@ -1,0 +1,35 @@
+
+[
+  {"name":"!doctype","title":"Document Type","category":"Basic Structure","desc":"Declares the document type and HTML version.","example":"<!DOCTYPE html>","icon":"!"},
+  {"name":"html","title":"Root element","category":"Basic Structure","desc":"Top-level element that contains the whole HTML document.","example":"<html lang=\"en\">...</html>","icon":"🌐"},
+  {"name":"head","title":"Head","category":"Basic Structure","desc":"Container for metadata, links, scripts and title.","example":"<head><title>Title</title></head>","icon":"🔖"},
+  {"name":"body","title":"Body","category":"Basic Structure","desc":"Contains the page content that is rendered in the browser.","example":"<body><h1>Hello</h1></body>","icon":"📦"},
+
+  {"name":"h1","title":"Heading level 1","category":"Text Formatting","desc":"Top-level heading for page titles.","example":"<h1>Welcome</h1>","icon":"H1"},
+  {"name":"h2","title":"Heading level 2","category":"Text Formatting","desc":"Section heading.","example":"<h2>Section</h2>","icon":"H2"},
+  {"name":"p","title":"Paragraph","category":"Text Formatting","desc":"Block of text for paragraphs.","example":"<p>This is a paragraph with <strong>bold</strong> text.</p>","icon":"P"},
+  {"name":"a","title":"Anchor (link)","category":"Inline","desc":"Creates hyperlinks to navigate between pages or anchors.","example":"<a href=\"https://example.com\">Visit</a>","icon":"🔗"},
+  {"name":"strong","title":"Strong (bold)","category":"Inline","desc":"Marks text of strong importance (typically bold).","example":"<strong>Important</strong>","icon":"B"},
+  {"name":"em","title":"Emphasis (italic)","category":"Inline","desc":"Marks text that has stress emphasis (typically italic).","example":"<em>Emphasized</em>","icon":"I"},
+
+  {"name":"ul","title":"Unordered list","category":"Lists","desc":"Creates a bulleted list.","example":"<ul><li>Item</li><li>Item</li></ul>","icon":"•"},
+  {"name":"ol","title":"Ordered list","category":"Lists","desc":"Creates a numbered list.","example":"<ol><li>First</li><li>Second</li></ol>","icon":"1."},
+  {"name":"li","title":"List item","category":"Lists","desc":"Represents an item inside a list.","example":"<li>List item</li>","icon":"–"},
+
+  {"name":"img","title":"Image","category":"Media","desc":"Embeds an image; include alt text for accessibility.","example":"<img src=\"https://via.placeholder.com/150\" alt=\"placeholder\">","icon":"🖼"},
+  {"name":"video","title":"Video","category":"Media","desc":"Embeds a video player with optional controls.","example":"<video src=\"video.mp4\" controls></video>","icon":"▶"},
+  {"name":"audio","title":"Audio","category":"Media","desc":"Embeds an audio player.","example":"<audio src=\"audio.mp3\" controls></audio>","icon":"🔊"},
+
+  {"name":"form","title":"Form","category":"Forms","desc":"Collects user input through controls like inputs and buttons.","example":"<form><label>Email: <input type=\"email\"></label><button>Submit</button></form>","icon":"⚙"},
+  {"name":"input","title":"Input","category":"Forms","desc":"Single-line text field or other input types (text, email, password...).","example":"<input type=\"text\" placeholder=\"Name\">","icon":"⌨"},
+  {"name":"label","title":"Label","category":"Forms","desc":"Associates text with a form control for accessibility.","example":"<label for=\"name\">Name</label><input id=\"name\">","icon":"🏷"},
+  {"name":"button","title":"Button","category":"Forms","desc":"Clickable button for actions or form submission.","example":"<button type=\"submit\">Send</button>","icon":"🔘"},
+
+  {"name":"section","title":"Section (semantic)","category":"Semantic","desc":"Thematic grouping of content on a page.","example":"<section><h2>About</h2><p>Info...</p></section>","icon":"§"},
+  {"name":"article","title":"Article","category":"Semantic","desc":"Independent, self-contained content such as a blog post.","example":"<article><h2>Post</h2><p>Content</p></article>","icon":"✎"},
+  {"name":"nav","title":"Navigation","category":"Semantic","desc":"Navigation links for the site.","example":"<nav><a href=\"#\">Home</a></nav>","icon":"🧭"},
+  {"name":"footer","title":"Footer","category":"Semantic","desc":"Footer for page information and links.","example":"<footer>© 2025</footer>","icon":"⎋"},
+
+  {"name":"table","title":"Table","category":"Tables","desc":"Tabular data container.","example":"<table><tr><th>Name</th></tr><tr><td>Alice</td></tr></table>","icon":"▦"},
+  {"name":"iframe","title":"Inline frame","category":"Embedded","desc":"Embeds another HTML page inside a page.","example":"<iframe src=\"https://example.com\"></iframe>","icon":"⤢"}
+]
