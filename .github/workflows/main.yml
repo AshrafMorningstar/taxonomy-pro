@@ -1,0 +1,21 @@
+name: CI Build
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run a one-line script
+        run: echo Hello, world!
+        
+      - name: Run a multi-line script
+        run: |
+          echo "This is a dummy build step to ensure the viral badge works."
+          echo "Add your real build commands here."
